@@ -1,0 +1,12 @@
+[submodule "packages/srv-nest"]
+	path = packages/srv-nest
+	url = https://github.com/creaux/srv-nest.git
+[submodule "packages/lib-react"]
+	path = packages/lib-react
+	url = https://github.com/creaux/lib-react.git
+[submodule "packages/lib-expo"]
+	path = packages/lib-expo
+	url = https://github.com/creaux/lib-expo.git
+[submodule "packages/lib-redux"]
+	path = packages/lib-redux
+	url = https://github.com/creaux/lib-redux.git
