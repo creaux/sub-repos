@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap && lerna link",
-    "clean": "lerna clean",
-    "ynpm": "lerna exec npm i && lerna exec yarn import"
+    "bootstrap": "lerna bootstrap",
+    "attach": "lerna link",
+    "clean": "lerna clean"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,11 @@
   },
   "homepage": "https://github.com/creaux/sub-repos#readme",
   "workspaces": [
-    "packages/*"
+    "packages/srv-nest",
+    "packages/lib-expo",
+    "packages/lib-model",
+    "packages/lib-react",
+    "packages/lib-redux"
   ],
   "private": true,
   "devDependencies": {

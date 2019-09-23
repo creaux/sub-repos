@@ -1,6 +1,12 @@
 {
   "version": "independent",
   "npmClient": "yarn",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/srv-nest",
+    "packages/lib-expo",
+    "packages/lib-model",
+    "packages/lib-react",
+    "packages/lib-redux"
+  ],
   "useWorkspaces": true
 }
