@@ -1,0 +1,33 @@
+{
+  "name": "@pyxismedia/subrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap && lerna link",
+    "clean": "lerna clean",
+    "ynpm": "lerna exec npm i && lerna exec yarn import"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creaux/sub-repos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creaux/sub-repos/issues"
+  },
+  "homepage": "https://github.com/creaux/sub-repos#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.16.4",
+    "yarn": "1.17.3"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "yarn": "1.17.3"
+  }
+}

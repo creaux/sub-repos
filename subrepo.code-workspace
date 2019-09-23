@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "packages/srv-nest"
+    },
+    {
+      "path": "packages/lib-react"
+    },
+    {
+      "path": "packages/lib-expo"
+    },
+    {
+      "path": "packages/lib-redux"
+    },
+    {
+      "path": "packages/lib-model"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "eslint.enable": true,
+    "eslint.run": "onType",
+    "eslint.workingDirectories": [
+      "./packages/lib-model",
+      "./packages/lib-redux",
+      "./packages/lib-expo",
+      "./packages/lib-react"
+    ],
+    "eslint.options": {
+      "configFile": ".eslintrc"
+    },
+    "eslint.validate": [
+      "typescript",
+      "typescriptreact",
+      "javascript",
+      "javascriptreact"
+    ]
+  }
+}

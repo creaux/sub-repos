@@ -1,12 +1,20 @@
 [submodule "packages/srv-nest"]
 	path = packages/srv-nest
 	url = https://github.com/creaux/srv-nest.git
+	update = rebase
 [submodule "packages/lib-react"]
 	path = packages/lib-react
 	url = https://github.com/creaux/lib-react.git
+	update = rebase
 [submodule "packages/lib-expo"]
 	path = packages/lib-expo
 	url = https://github.com/creaux/lib-expo.git
+	update = rebase
 [submodule "packages/lib-redux"]
 	path = packages/lib-redux
 	url = https://github.com/creaux/lib-redux.git
+	update = rebase
+[submodule "packages/lib-model"]
+	path = packages/lib-model
+	url = https://github.com/creaux/lib-model.git
+	update = rebase
