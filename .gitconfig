@@ -4,7 +4,7 @@ commit-including-submodule = "!f() { \
             echo "ERROR: Commit message required!"; \
          else \
             git submodule foreach "git add . && git commit -m '${1}'"; \
-            git add . && git commit -m $1; \
+            git add . && git commit -m '${1}'; \
             echo "SUCCESS: You have succesfully commited all your changes."; \
          fi; \
        }; f"
