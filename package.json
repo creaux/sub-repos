@@ -6,7 +6,10 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "attach": "lerna link",
-    "clean": "lerna clean"
+    "clean": "lerna clean",
+    "update": "lernaupdate --non-interactive --dependency @pyxismedia/lib-model && lernaupdate --non-interactive --dependency @pyxismedia/lib-redux && lernaupdate --non-interactive --dependency @pyxismedia/lib-react && lernaupdate --non-interactive --dependency @pyxismedia/lib-expo",
+    "npm": "lerna exec npm i",
+    "env": "git config --local include.path ../.gitconfig"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,7 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.16.4",
+    "lerna-update-wizard": "^0.16.0",
     "yarn": "1.17.3"
   },
   "engines": {
