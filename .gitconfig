@@ -3,7 +3,7 @@ commit-including-submodule = "!f() { \
          if [ -u $1 ]; then \
             echo "ERROR: Commit message required!"; \
          else \
-            echo "INFO: Commit message is: ${1}"; \
+            echo \"INFO: Commit message is: ${1}\"; \
             git submodule foreach git add .;  \
             git submodule foreach git commit -m \"${1}\"; \
             git add . && git commit -m \"${1}\"; \
