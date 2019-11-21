@@ -1,6 +1,7 @@
 {
   "version": "independent",
   "npmClient": "yarn",
+  "npmClientArgs": ["--no-optional"],
   "packages": [
     "packages/srv-nest",
     "packages/lib-expo",

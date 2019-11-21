@@ -1,22 +1,32 @@
 {
   "folders": [
     {
-      "path": "."
+      "path": ".",
+      "name": "subrepo"
     },
     {
-      "path": "packages/srv-nest"
+      "path": "packages/srv-nest",
+      "name": "srv-nest"
     },
     {
-      "path": "packages/lib-react"
+      "path": "packages/lib-react",
+      "name": "lib-react"
     },
     {
-      "path": "packages/lib-expo"
+      "path": "packages/lib-expo",
+      "name": "lib-expo"
     },
     {
-      "path": "packages/lib-redux"
+      "path": "packages/lib-redux",
+      "name": "lib-redux"
     },
     {
-      "path": "packages/lib-model"
+      "path": "packages/lib-model",
+      "name": "lib-model"
+    },
+    {
+      "path": "packages/app-animo",
+      "name": "app-animo"
     }
   ],
   "settings": {
@@ -30,13 +40,34 @@
       "./packages/lib-react"
     ],
     "eslint.options": {
-      "configFile": ".eslintrc"
+      "configFile": ".eslintrc.json"
     },
     "eslint.validate": [
       "typescript",
       "typescriptreact",
       "javascript",
       "javascriptreact"
-    ]
+    ],
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/build": true,
+      "**/.yalc": true,
+      "**/yalc.lock": true
+    },
+    "files.autoSave": "onFocusChange",
+    // Issue with generics which are closed automatically
+    "auto-close-tag.activationOnLanguage": [
+      "html",
+      "xml",
+      "javascript",
+      "javascriptreact",
+      "typescriptreact"
+    ],
+    "editor.fontSize": 11
   }
 }

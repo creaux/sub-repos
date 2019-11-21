@@ -18,3 +18,6 @@
 	path = packages/lib-model
 	url = https://github.com/creaux/lib-model.git
 	update = rebase
+[submodule "packages/app-animo"]
+	path = packages/app-animo
+	url = https://github.com/creaux/app-animo.git

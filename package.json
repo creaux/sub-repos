@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "attach": "lerna link",
+    "attach": "lerna exec --scope @pyxismedia/lib-model yarn link && lerna exec --scope @pyxismedia/srv-nest yarn link @pyxismedia/lib-model && lerna exec --scope @pyxismedia/lib-redux yarn link @pyxismedia/lib-model && ln -s ../../../node_modules/bootstrap packages/lib-react/node_modules/bootstrap",
     "clean": "lerna clean",
     "update": "lernaupdate --non-interactive --dependency @pyxismedia/lib-model && lernaupdate --non-interactive --dependency @pyxismedia/lib-redux && lernaupdate --non-interactive --dependency @pyxismedia/lib-react && lernaupdate --non-interactive --dependency @pyxismedia/lib-expo",
     "npm": "lerna exec npm i",
-    "env": "git config --local include.path ../.gitconfig"
+    "env": "git config --local include.path ../.gitconfig",
+    "preinstall": "brew install coreutils",
+    "postinstall": "yarn attach"
   },
   "repository": {
     "type": "git",
