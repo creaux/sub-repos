@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "attach": "lerna exec --scope @pyxismedia/lib-model yarn link && lerna exec --scope @pyxismedia/srv-nest yarn link @pyxismedia/lib-model && lerna exec --scope @pyxismedia/lib-redux yarn link @pyxismedia/lib-model && ln -s ../../../node_modules/bootstrap packages/lib-react/node_modules/bootstrap",
-    "clean": "lerna clean",
+    "attach": "lerna exec --scope @pyxismedia/lib-model yarn link && rm -rf packages/lib-react/node_modules/bootstrap && ln -s ../../../node_modules/bootstrap packages/lib-react/node_modules/bootstrap && rm -rf packages/lib-model/node_modules/class-validator && ln -s ../../../node_modules/class-validator packages/lib-model/node_modules/class-validator && rm -rf packages/srv-nest/node_modules/class-validator && ln -s ../../../node_modules/class-validator packages/srv-nest/node_modules/class-validator && rm -rf packages/lib-model/node_modules/class-transformer && ln -s ../../../node_modules/class-transformer packages/lib-model/node_modules/class-transformer && rm -rf packages/lib-model/node_modules/jest-runner && ln -s ../../../node_modules/jest-runner packages/lib-model/node_modules/jest-runner && rm -rf packages/srv-nest/node_modules/jest-runner && ln -s ../../../node_modules/jest-runner packages/srv-nest/node_modules/jest-runner",
+    "clean": "lerna clean && rm -rf node_modules",
     "update": "lernaupdate --non-interactive --dependency @pyxismedia/lib-model && lernaupdate --non-interactive --dependency @pyxismedia/lib-redux && lernaupdate --non-interactive --dependency @pyxismedia/lib-react && lernaupdate --non-interactive --dependency @pyxismedia/lib-expo",
     "npm": "lerna exec npm i",
     "env": "git config --local include.path ../.gitconfig",
@@ -28,7 +28,8 @@
     "packages/lib-expo",
     "packages/lib-model",
     "packages/lib-react",
-    "packages/lib-redux"
+    "packages/lib-redux",
+    "packages/app-animo"
   ],
   "private": true,
   "devDependencies": {
