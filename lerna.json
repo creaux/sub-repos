@@ -8,7 +8,8 @@
     "packages/lib-model",
     "packages/lib-react",
     "packages/lib-redux",
-    "packages/app-animo"
+    "packages/app-animo",
+    "packages/lbd-stripe"
   ],
   "useWorkspaces": true
 }

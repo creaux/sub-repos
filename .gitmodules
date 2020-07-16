@@ -27,3 +27,7 @@
 	path = packages/app-animo
 	url = https://github.com/creaux/app-animo.git
 	branch = master
+[submodule "packages/lbd-stripe"]
+	path = packages/lbd-stripe
+	url = https://github.com/creaux/lbd-stripe.git
+	branch = master
