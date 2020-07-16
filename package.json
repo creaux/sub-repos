@@ -6,12 +6,13 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "attach": "lerna exec --scope @pyxismedia/lib-model yarn link && lerna exec --scope @pyxismedia/srv-nest yarn link @pyxismedia/lib-model && lerna exec --scope @pyxismedia/lib-redux yarn link @pyxismedia/lib-model && ln -s ../../../node_modules/bootstrap packages/lib-react/node_modules/bootstrap",
-    "clean": "lerna clean",
+    "clean": "lerna clean && rm -rf node_modules",
     "update": "lernaupdate --non-interactive --dependency @pyxismedia/lib-model && lernaupdate --non-interactive --dependency @pyxismedia/lib-redux && lernaupdate --non-interactive --dependency @pyxismedia/lib-react && lernaupdate --non-interactive --dependency @pyxismedia/lib-expo",
     "npm": "lerna exec npm i",
     "env": "git config --local include.path ../.gitconfig",
-    "preinstall": "brew install coreutils",
-    "postinstall": "yarn attach"
+    "postinstall": "yarn attach",
+    "precommit": "echo 'Empty'",
+    "prepush": "scho 'Empty'"
   },
   "repository": {
     "type": "git",
@@ -23,15 +24,19 @@
     "url": "https://github.com/creaux/sub-repos/issues"
   },
   "homepage": "https://github.com/creaux/sub-repos#readme",
-  "workspaces": [
-    "packages/srv-nest",
-    "packages/lib-expo",
-    "packages/lib-model",
-    "packages/lib-react",
-    "packages/lib-redux"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/srv-nest",
+      "packages/lib-expo",
+      "packages/lib-model",
+      "packages/lib-react",
+      "packages/lib-redux",
+      "packages/lbd-stripe"
+    ]
+  },
   "private": true,
   "devDependencies": {
+    "check-package-lock": "^1.0.3",
     "lerna": "^3.16.4",
     "lerna-update-wizard": "^0.16.0",
     "yarn": "1.17.3"

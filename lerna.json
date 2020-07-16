@@ -7,7 +7,8 @@
     "packages/lib-expo",
     "packages/lib-model",
     "packages/lib-react",
-    "packages/lib-redux"
+    "packages/lib-redux",
+    "packages/lbd-stripe"
   ],
   "useWorkspaces": true
 }

@@ -68,6 +68,9 @@
       "javascriptreact",
       "typescriptreact"
     ],
-    "editor.fontSize": 11
+    "editor.fontSize": 14,
+    "css.remoteStyleSheets": [
+      "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    ]
   }
 }
