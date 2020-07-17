@@ -27,6 +27,10 @@
       "packages/lib-redux",
       "packages/lbd-stripe",
       "packages/app-animo"
+    ],
+    "nohoist": [
+      "@pyxismedia/lib-react/node-sass-tilde-importer",
+      "@pyxismedia/lib-react/node-sass-tilde-importer/**"
     ]
   },
   "private": true,
