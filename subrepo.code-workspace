@@ -67,7 +67,6 @@
       "javascript",
       "javascriptreact",
       "typescriptreact"
-    ],
-    "editor.fontSize": 11
+    ]
   }
 }
