@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "bootstrap": "yarn",
-    "precommit": "echo 'It is empty yet!'",
-    "prepush": "echo 'It is empty yet!'"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/creaux/sub-repos.git"
@@ -34,11 +29,13 @@
     ]
   },
   "private": true,
-  "devDependencies": {
-    "yarn": "1.17.3"
-  },
   "engines": {
     "node": "10.15.3",
     "yarn": "1.17.3"
+  },
+  "scripts": {
+    "husky:pre-commit": "echo 'husky:pre-commit is empty'",
+    "husky:pre-push": "echo 'husky:pre-push is empty'",
+    "husky:post-commit": "echo 'husky:post-commit is empty'"
   }
 }
