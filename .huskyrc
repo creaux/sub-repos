@@ -1,8 +1,0 @@
-{
-  "hooks": {
-    "pre-commit": "which node && if [ -z ${PACKAGE+x} ] ; then echo \"Variable PACKAGE is not set to yarn workpaces package. Example: PACKAGE=\"@pyxismedia/lib-react\" git commit ... \" ; exit 1 ; elif [ $PACKAGE = @pyxismedia\/subrepo ] ; then yarn husky:pre-commit ; else yarn workspace $PACKAGE husky:pre-commit ; fi",
-    "pre-push": "if [ -z ${PACKAGE+x} ] ; then echo \"Variable PACKAGE is not set to yarn workpaces package. Example: PACKAGE=\"@pyxismedia/lib-react\" git commit ... \" ; exit 1 ; elif [ $PACKAGE = @pyxismedia\/subrepo ] ; then yarn husky:pre-push ; else yarn workspace $PACKAGE husky:pre-push ; fi",
-    "post-commit": "if [ -z ${PACKAGE+x} ] ; then echo \"Variable PACKAGE is not set to yarn workpaces package. Example: PACKAGE=\"@pyxismedia/lib-react\" git commit ... \" ; exit 1 ; elif [ $PACKAGE = @pyxismedia\/subrepo ] ; then yarn husky:post-commit ; else yarn workspace $PACKAGE husky:post-commit ; fi",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-  }
-}

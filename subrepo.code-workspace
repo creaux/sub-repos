@@ -55,7 +55,7 @@
       "**/CVS": true,
       "**/.DS_Store": true,
       "**/node_modules": true,
-      "**/build": true,
+      "**/build": false,
       "**/.yalc": true,
       "**/yalc.lock": true
     },

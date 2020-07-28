@@ -13,29 +13,9 @@
     "url": "https://github.com/creaux/sub-repos/issues"
   },
   "homepage": "https://github.com/creaux/sub-repos#readme",
-  "workspaces": {
-    "packages": [
-      "packages/srv-nest",
-      "packages/lib-expo",
-      "packages/lib-model",
-      "packages/lib-react",
-      "packages/lib-redux",
-      "packages/lbd-stripe",
-      "packages/app-animo"
-    ],
-    "nohoist": [
-      "@pyxismedia/lib-react/node-sass-tilde-importer",
-      "@pyxismedia/lib-react/node-sass-tilde-importer/**"
-    ]
-  },
   "private": true,
   "engines": {
-    "node": "10.15.3",
-    "yarn": "1.17.3"
-  },
-  "scripts": {
-    "husky:pre-commit": "echo 'husky:pre-commit is empty'",
-    "husky:pre-push": "echo 'husky:pre-push is empty'",
-    "husky:post-commit": "echo 'husky:post-commit is empty'"
+    "node": "12.*",
+    "npm": "6.14.7"
   }
 }
